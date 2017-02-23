@@ -1,0 +1,11 @@
+<div>
+    {{pageTitle}}
+    <ul>
+        <li *ngFor="let customer of customers">
+            {{customer.name}}
+        </li>
+    </ul>
+    <div *ngIf="customers.length">
+        <h3>You have {{customers.length}} customers</h3>
+    </div>
+</div>
